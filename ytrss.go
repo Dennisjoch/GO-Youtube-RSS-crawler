@@ -9,7 +9,7 @@ import (
 func main() {
     doc, err := goquery.NewDocument("https://www.youtube.com/channel/UCzH549YlZhdhIqhtvz7XHmQ")
     if err != nil {
-        panic("meh")
+        panic("meh...")
     }
 
     doc.Find("link").Each(func(i int, s *goquery.Selection) {
